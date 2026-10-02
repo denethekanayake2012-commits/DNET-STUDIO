@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="assets/dnet-favicon.svg">
+<link rel="apple-touch-icon" href="assets/dnet-favicon.svg">
+<title>DNET Studio • Create Account</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Inter,Segoe UI,Arial,sans-serif;color:#fff;background:#050816;display:grid;place-items:center;overflow:auto}
+body:before{content:"";position:fixed;inset:-25%;z-index:-2;background:radial-gradient(circle at 12% 18%,#00d9ff66,transparent 23%),radial-gradient(circle at 88% 16%,#a855f766,transparent 25%),radial-gradient(circle at 75% 88%,#ff2db266,transparent 25%),radial-gradient(circle at 18% 82%,#ffd43b44,transparent 22%);filter:blur(55px);animation:aurora 12s ease-in-out infinite alternate}
+body:after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(120deg,transparent 20%,#fff1 45%,transparent 70%);animation:sheen 9s linear infinite;pointer-events:none}
+@keyframes aurora{to{transform:translate(4%,5%) scale(1.12)}}@keyframes sheen{to{transform:translateX(28%)}}@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+.wrap{width:min(520px,94vw);padding:24px}.card{position:relative;padding:34px;border:1px solid #ffffff25;border-radius:30px;background:linear-gradient(145deg,#ffffff14,#ffffff07);backdrop-filter:blur(28px) saturate(155%);box-shadow:0 30px 100px #000b,inset 0 1px #fff5;animation:pop .7s ease}
+.card:before{content:"";position:absolute;inset:-1px;border-radius:30px;padding:1px;background:linear-gradient(120deg,#22d3eeaa,#8b5cf6aa,#ec4899aa,#facc15aa,#22d3eeaa);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.orb{width:82px;height:82px;margin:0 auto 13px;border-radius:25px;display:grid;place-items:center;font-size:34px;font-weight:950;background:linear-gradient(135deg,#06b6d4,#2563eb,#9333ea,#ec4899);box-shadow:0 0 55px #8b5cf666;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{50%{transform:translateY(-5px) rotate(2deg);box-shadow:0 0 80px #ec489955}}
+.brand{text-align:center;font-weight:950;letter-spacing:.17em;color:#dbeafe}.brand span{color:#67e8f9}h1{text-align:center;font-size:clamp(2.2rem,8vw,3.2rem);margin:8px 0;background:linear-gradient(90deg,#fff,#67e8f9,#c4b5fd,#f9a8d4,#fde68a);-webkit-background-clip:text;color:transparent}p{text-align:center;color:#cbd5e1;line-height:1.6}.status{text-align:center;min-height:24px;color:#a7f3d0;margin:15px 0}
+.google,.submit{width:100%;padding:15px;border-radius:17px;font-size:1rem;font-weight:900;cursor:pointer;transition:.25s}.google{border:1px solid #ffffff30;background:#fff;color:#172033;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 8px 25px #0003}.google:hover,.submit:hover{transform:translateY(-3px);box-shadow:0 15px 40px #22d3ee33}.glogo{width:23px;height:23px}.divider{display:flex;align-items:center;gap:10px;color:#94a3b8;margin:19px 0}.divider:before,.divider:after{content:"";height:1px;flex:1;background:#ffffff22}
+label{display:block;color:#dbeafe;font-size:.82rem;font-weight:800;margin:10px 2px 5px}input{width:100%;padding:14px 15px;border:1px solid #ffffff20;border-radius:15px;background:#020617aa;color:#fff;outline:none;font-size:.98rem}input:focus{border-color:#67e8f9aa;box-shadow:0 0 0 4px #06b6d422}.submit{border:0;color:#fff;background:linear-gradient(100deg,#06b6d4,#2563eb,#7c3aed,#ec4899,#f59e0b);background-size:260% 100%;animation:gradient 6s linear infinite}@keyframes gradient{to{background-position:260% 0}}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:20px 0}.info div{padding:11px 8px;border-radius:15px;text-align:center;background:#ffffff09;border:1px solid #ffffff15;color:#cbd5e1;font-size:.74rem}.info b{display:block;font-size:1.05rem;margin-bottom:3px;color:#fff}.hint{text-align:center;color:#94a3b8;font-size:.76rem}.back{display:block;text-align:center;margin-top:18px;color:#a5d8ff;text-decoration:none;font-weight:700}.back:hover{color:#fff}
+@media(max-width:520px){.wrap{padding:12px}.card{padding:25px}.info{grid-template-columns:1fr}.orb{width:72px;height:72px}}
+</style>
+</head>
+<body><div class="wrap"><main class="card">
+<div class="orb">D</div><div class="brand">DNET <span>STUDIO</span></div>
+<h1>Join DNET</h1><p>Create your DNET Studio account and keep your profile connected securely with Firebase.</p>
+<div id="status" class="status">Choose a sign-in method to continue.</div>
+<button id="google" class="google"><svg class="glogo" viewBox="0 0 24 24"><path fill="#4285F4" d="M21.35 12.2c0-.72-.06-1.42-.18-2.09H12v3.96h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.91-4.18 2.91-7.26z"/><path fill="#34A853" d="M12 21.5c2.63 0 4.84-.87 6.45-2.35l-3.14-2.45c-.87.58-1.98.92-3.31.92-2.54 0-4.69-1.72-5.46-4.03H3.29v2.53A9.74 9.74 0 0 0 12 21.5z"/><path fill="#FBBC05" d="M6.54 13.59A5.85 5.85 0 0 1 6.24 12c0-.55.1-1.08.3-1.59V7.88H3.29A9.5 9.5 0 0 0 2.25 12c0 1.53.37 2.98 1.04 4.12l3.25-2.53z"/><path fill="#EA4335" d="M12 6.38c1.43 0 2.72.49 3.73 1.46l2.8-2.8C16.84 3.43 14.63 2.5 12 2.5a9.74 9.74 0 0 0-8.71 5.38l3.25 2.53C7.31 8.1 9.46 6.38 12 6.38z"/></svg>Continue with Google</button>
+<div class="divider">or use email</div>
+<form id="form"><label for="email">Email address</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required><label for="password">Password</label><input id="password" type="password" minlength="6" autocomplete="new-password" placeholder="At least 6 characters" required><button class="submit">Create account / Sign in</button></form>
+<div class="info"><div><b>🔐</b>Firebase Auth</div><div><b>👤</b>Your Profile</div><div><b>✨</b>DNET Studio</div></div>
+<div class="hint">Your login is handled by Firebase Authentication. Your Firebase project settings are loaded from FIREBASE.txt.</div><a class="back" href="index.html">← Back to DNET Studio</a>
+</main></div>
+<script type="module">
+import{initializeApp}from"https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+import{getAuth,GoogleAuthProvider,signInWithPopup,createUserWithEmailAndPassword,signInWithEmailAndPassword,onAuthStateChanged,setPersistence,browserLocalPersistence}from"https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+const firebaseConfig={apiKey:"AIzaSyBRIxHcal7I8DyNw_uXUtn1IwGN6aksAYQ",authDomain:"dnet-studio.firebaseapp.com",projectId:"dnet-studio",storageBucket:"dnet-studio.firebasestorage.app",messagingSenderId:"741424551016",appId:"1:741424551016:web:fee4016dc5234da5f197dd",measurementId:"G-942BJH2FS6"};
+const auth=getAuth(initializeApp(firebaseConfig));await setPersistence(auth,browserLocalPersistence);const provider=new GoogleAuthProvider(),status=document.getElementById("status");
+onAuthStateChanged(auth,u=>{if(u)location.href="profile.html"});
+function go(u){localStorage.setItem("dnetFirebaseUser",JSON.stringify({uid:u.uid,name:u.displayName||"DNET Studio User",email:u.email||"",photo:u.photoURL||""}));location.href="profile.html"}
+google.onclick=async()=>{status.textContent="Connecting securely to Google…";try{go((await signInWithPopup(auth,provider)).user)}catch(e){status.textContent=e.code==="auth/popup-closed-by-user"?"Google sign-in was cancelled.":"Google sign-in failed: "+e.code}};
+form.onsubmit=async e=>{e.preventDefault();status.textContent="Checking your account…";try{let r;try{r=await signInWithEmailAndPassword(auth,email.value.trim(),password.value)}catch(x){if(!["auth/user-not-found","auth/invalid-credential"].includes(x.code))throw x;r=await createUserWithEmailAndPassword(auth,email.value.trim(),password.value)}go(r.user)}catch(e){status.textContent="Account error: "+e.code}};
+</script></body></html>
